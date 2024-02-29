@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+    <title>Artwaga</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <button
+        class="btn"
+        value="Refresh Page"
+        onClick="window.location.reload()"
+      >
+        Обновить
+      </button>
+      <!--  -->
+      <div class="headContainer">
+        <input
+          type="text"
+          id="myInput"
+          onkeyup="sortByValue()"
+          placeholder="Введите имя..."
+        />
+        <div class="dropdownMenu"></div>
+        <div id="tblDiv">
+          <div id="sort">
+            <table id="maintbl">
+              <td class="sortBtn" id="btn1" onclick="sortTableByNumbers(0)">
+                <i class="arrow down"></i>
+                ID
+              </td>
+              <td class="sortBtn" id="btn2" onclick="sortTable(1)">
+                <i class="arrow down"></i>N A M E
+              </td>
+              <td class="sortBtn" id="btn3" onclick="sortTable(2)">
+                <i class="arrow down"></i>E M A I L
+              </td>
+              <td class="sortBtn" id="btn4" onclick="sortTable(3)">
+                <i class="arrow down"></i>USERNAME
+              </td>
+              <td class="sortBtn" id="btn5" onclick="sortTable(4)">
+                <i class="arrow down"></i>PHONE
+              </td>
+            </table>
+          </div>
+          <table id="user"></table>
+        </div>
+      </div>
+      <!--  -->
+      <script type="text/javascript">
+        var hellopreloader = document.getElementById("hellopreloader_preload");
+        function fadeOutnojquery(el) {
+          el.style.opacity = 1;
+          var interhellopreloader = setInterval(function () {
+            el.style.opacity = el.style.opacity - 0.05;
+            if (el.style.opacity <= 0.05) {
+              clearInterval(interhellopreloader);
+              hellopreloader.style.display = "none";
+            }
+          }, 16);
+        }
+        window.onload = function () {
+          setTimeout(function () {
+            fadeOutnojquery(hellopreloader);
+          }, 50);
+        };
+      </script>
+    </div>
+  </body>
+</html>
