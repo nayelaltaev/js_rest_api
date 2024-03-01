@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Koulen&family=Poppins:wght@300;400;500&family=Raleway&family=Tapestry&display=swap");
 * {
-  font-family: "Indie Flower", bold;
+  font-family: "Poppins", bold;
 }
 body {
   padding: 0;
@@ -15,11 +15,17 @@ input {
   color: white;
   width: 250px;
   height: 35px;
-  margin-left: 444px;
+  margin-left: 244px;
   margin-top: 20px;
   border-radius: 25px;
   border: none;
 }
+
+input:hover {
+  border-color: #abb5c8;
+  border-collapse: collapse;
+}
+
 .text-field__input::placeholder {
   color: #212529;
   opacity: 0.4;
@@ -82,9 +88,7 @@ select {
   padding: 0.6em 0.8em 0.5em 1.4em;
 }
 /*  */
-#sort {
-  margin-left: 350px;
-}
+
 #btn1 {
   border: 1px solid black;
   width: 100px;
@@ -101,7 +105,7 @@ select {
 }
 #btn3 {
   border: 1px solid black;
-  width: 200px;
+  width: 263px;
   height: 40px;
   text-align: center;
   font-weight: bold;
@@ -120,9 +124,13 @@ select {
   text-align: center;
   font-weight: bold;
 }
+
+/* !!! */
+
 .sortBtn {
   background-color: #fff;
 }
+
 .sortBtn:hover {
   background-color: #e2ef69;
 }
@@ -130,23 +138,19 @@ select {
   background-color: #6997ef;
 }
 #tblDiv {
-  margin-top: 50px;
-  /* margin-left: 100px; */
+  margin-top: 60px;
 }
-#maintbl {
-  margin-left: 0px;
-}
-#sordByAge {
-  color: #888;
-}
+
 table {
   font-size: 18px;
-  margin-left: 350px;
+  margin-left: 150px;
   top: 50px;
-  border-spacing: 0px;
-  border-collapse: collapse;
-  background-color: rgba(63, 94, 206, 0.892);
+  border-spacing: 5px;
+  background-color: rgba(177, 182, 200, 0.892);
 }
+
+/* !!! */
+
 .arrow {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -160,7 +164,6 @@ table {
 }
 
 #td1 {
-  background-color: rgba(63, 94, 206, 0.892);
   border: 1px solid black;
   width: 100px;
   height: 60px;
@@ -168,7 +171,6 @@ table {
   font-weight: bold;
 }
 #td2 {
-  background-color: rgba(63, 94, 206, 0.892);
   border: 1px solid black;
   width: 250px;
   height: 60px;
@@ -176,7 +178,6 @@ table {
   font-weight: bold;
 }
 #td3 {
-  background-color: rgba(63, 94, 206, 0.892);
   border: 1px solid black;
   width: 150px;
   height: 60px;
@@ -184,7 +185,6 @@ table {
   font-weight: bold;
 }
 #td4 {
-  background-color: rgba(63, 94, 206, 0.892);
   border: 1px solid black;
   width: 179px;
   height: 60px;
@@ -192,7 +192,6 @@ table {
   font-weight: bold;
 }
 #td5 {
-  background-color: rgba(63, 94, 206, 0.892);
   border: 1px solid black;
   width: 200px;
   height: 60px;
@@ -202,7 +201,7 @@ table {
 .btn {
   position: absolute;
   top: 20px;
-  left: 1050px;
+  left: 800px;
   width: 150px;
   height: 40px;
   border-radius: 25px;
@@ -212,8 +211,9 @@ table {
   background-color: rgb(83, 55, 241);
   z-index: 100;
 }
+
 .btn:hover {
-  background-color: #9d2c8f;
+  background-color: rgba(83, 55, 241, 0.183);
 }
 .btn:active {
   background-color: #abb5c8;

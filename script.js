@@ -6,7 +6,6 @@ const renderUser = (user) => {
       return;
     }
     result += ` 
-    <table id="myTable">
     <tr>
         <td id="td1">${element.id}</td>
         <td id="td2">${element.name}</td>
@@ -14,7 +13,7 @@ const renderUser = (user) => {
         <td id="td4">${element.username}</td>
         <td id="td5">${element.phone}</td>
         </tr>
-        </table>`;
+        `;
   });
   baseURL.innerHTML = result;
   localStorage.setItem("user", JSON.stringify(user));
