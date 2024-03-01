@@ -37,7 +37,7 @@ const fetchData = () => {
   }
 };
 fetchData();
-// ?--------
+// ?      -_0       //////////////////////////////////////////////////////
 function sortByValue() {
   let input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("myInput");
@@ -57,7 +57,7 @@ function sortByValue() {
   }
 }
 sortByValue();
-// ?--------
+// ?--------_________-------------__________----------__________
 
 function filterTable() {
   let dropdown, tr, table, name, cells, filter;
@@ -76,7 +76,7 @@ function filterTable() {
     }
   }
 }
-// !
+// ?--------_________-------------__________----------__________
 function sortTable(n) {
   let table,
     rows,
@@ -121,7 +121,7 @@ function sortTable(n) {
     }
   }
 }
-// !
+// ?--------_________-------------__________----------__________
 function sortTableByNumbers(n) {
   let table,
     rows,

@@ -1,22 +1,57 @@
 @import url("https://fonts.googleapis.com/css2?family=Indie+Flower&family=Koulen&family=Poppins:wght@300;400;500&family=Raleway&family=Tapestry&display=swap");
 * {
   font-family: "Poppins", bold;
+  margin: 0 0;
+  padding: 0 0;
 }
 body {
-  padding: 0;
-  margin: 0;
+  padding: 0 0;
+  margin: 0 0;
   position: relative;
   background-color: rgb(181, 171, 100);
 }
+.main-container {
+  max-width: 1250px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px 20px 0 20px;
+  margin-bottom: 150px;
+}
+.headContainer {
+  display: flex;
+  flex-flow: nowrap;
+  justify-content: space-around;
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+.btn-refresh {
+  /* margin-left: 500px; */
+  width: 150px;
+  height: 37px;
+  border-radius: 25px;
+  border: none;
+  font-size: 22px;
+  color: aliceblue;
+  background-color: rgb(83, 55, 241);
+  padding: 0 10px 0 10px;
+}
+
+.btn-refresh:hover {
+  background-color: rgba(83, 55, 241, 0.183);
+}
+.btn-refresh:active {
+  background-color: #abb5c8;
+}
+
 input {
   padding-left: 15px;
   font-size: 20px;
   background-color: #abb5c8;
   color: white;
-  width: 250px;
-  height: 35px;
-  margin-left: 244px;
-  margin-top: 20px;
+  max-width: 250px;
+  height: 37px;
+  margin-left: 125px;
   border-radius: 25px;
   border: none;
 }
@@ -30,18 +65,17 @@ input:hover {
   color: #212529;
   opacity: 0.4;
 }
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 select {
   padding-left: 15px;
   font-size: 20px;
 }
-.headContainer {
-  margin-top: 25px;
-  /* margin-left: 250px;   */
-  margin-bottom: 0;
-}
+
 .select-css {
-  margin-left: 1200px;
-  margin-top: 20px;
+  /* margin-left: 1200px; */
+  /* margin-top: 20px; */
   display: block;
   font-size: 16px;
   font-family: sans-serif;
@@ -49,7 +83,6 @@ select {
   color: #444;
   line-height: 1.3;
   padding: 0.6em 1.4em 0.5em 0.8em;
-  /* width: 100%; */
   width: 200px;
   max-width: 100%;
   box-sizing: border-box;
@@ -87,7 +120,8 @@ select {
   background-position: left 0.7em top 50%, 0 0;
   padding: 0.6em 0.8em 0.5em 1.4em;
 }
-/*  */
+
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 #btn1 {
   border: 1px solid black;
@@ -98,34 +132,34 @@ select {
 }
 #btn2 {
   border: 1px solid black;
-  width: 250px;
+  width: 300px;
   height: 60px;
   text-align: center;
   font-weight: bold;
 }
 #btn3 {
   border: 1px solid black;
-  width: 263px;
+  width: 363px;
   height: 40px;
   text-align: center;
   font-weight: bold;
 }
 #btn4 {
   border: 1px solid black;
-  width: 180px;
+  width: 220px;
   height: 60px;
   text-align: center;
   font-weight: bold;
 }
 #btn5 {
   border: 1px solid black;
-  width: 200px;
+  width: 250px;
   height: 60px;
   text-align: center;
   font-weight: bold;
 }
 
-/* !!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 .sortBtn {
   background-color: #fff;
@@ -140,16 +174,14 @@ select {
 #tblDiv {
   margin-top: 60px;
 }
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 
 table {
   font-size: 18px;
-  margin-left: 150px;
   top: 50px;
   border-spacing: 5px;
   background-color: rgba(177, 182, 200, 0.892);
 }
-
-/* !!! */
 
 .arrow {
   border: solid black;
@@ -163,62 +195,41 @@ table {
   -webkit-transform: rotate(45deg);
 }
 
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 #td1 {
   border: 1px solid black;
-  width: 100px;
   height: 60px;
   text-align: center;
   font-weight: bold;
 }
 #td2 {
   border: 1px solid black;
-  width: 250px;
   height: 60px;
   text-align: center;
   font-weight: bold;
 }
 #td3 {
   border: 1px solid black;
-  width: 150px;
   height: 60px;
   text-align: center;
   font-weight: bold;
 }
 #td4 {
   border: 1px solid black;
-  width: 179px;
   height: 60px;
   text-align: center;
   font-weight: bold;
 }
 #td5 {
   border: 1px solid black;
-  width: 200px;
   height: 60px;
   text-align: center;
   font-weight: bold;
 }
-.btn {
-  position: absolute;
-  top: 20px;
-  left: 800px;
-  width: 150px;
-  height: 40px;
-  border-radius: 25px;
-  border: none;
-  font-size: 22px;
-  color: aliceblue;
-  background-color: rgb(83, 55, 241);
-  z-index: 100;
-}
 
-.btn:hover {
-  background-color: rgba(83, 55, 241, 0.183);
-}
-.btn:active {
-  background-color: #abb5c8;
-}
-/*  */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
 .dropbtn {
   background-color: #f9f9f9;
   border: none;
@@ -236,7 +247,135 @@ table {
   position: relative;
 }
 
-.main-container {
-  margin-left: auto;
-  margin-bottom: 150px;
+/* !!!!!!!!!!!!!! */
+
+@media (max-width: 800px) {
+  .main-container {
+    margin: 0px 0px;
+    margin-bottom: 100px;
+  }
+
+  #btn1 {
+    width: 20px;
+    height: 60px;
+  }
+  #btn2 {
+    width: 150px;
+    height: 60px;
+  }
+  #btn3 {
+    width: 160px;
+    height: 40px;
+  }
+  #btn4 {
+    width: 50px;
+    height: 60px;
+  }
+  #btn5 {
+    width: 150px;
+    height: 60px;
+  }
+
+  table {
+    font-size: 14px;
+    border-spacing: 0px;
+    font-weight: normal;
+  }
+
+  .btn-refresh {
+    width: 120px;
+    height: 27px;
+    border-radius: 25px;
+    font-size: 18px;
+    padding: 0 10px 0 10px;
+  }
+
+  input {
+    padding-left: 15px;
+    font-size: 15px;
+    max-width: 150px;
+    height: 25px;
+    margin-left: 0px;
+  }
+}
+
+/* !!!!!!!!!!!!!! */
+
+@media (max-width: 600px) {
+  .main-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px, 0px, 0px, 0px;
+
+    margin-bottom: 50px;
+  }
+  table {
+    font-size: 12px;
+    border-spacing: 0px;
+    font-weight: normal;
+  }
+  #btn4 {
+    display: none;
+  }
+  #td4 {
+    display: none;
+  }
+  .headContainer {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+/* !!!!!!!!!!!!!! */
+
+@media (max-width: 430px) {
+  .main-container {
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px, 0px, 0px, 0px;
+    margin-bottom: 10px;
+  }
+  table {
+    font-size: 10px;
+    border-spacing: 0px;
+    font-weight: normal;
+  }
+  input {
+    padding-left: 15px;
+    font-size: 11px;
+    max-width: 80px;
+    height: 25px;
+    margin-left: 0px;
+  }
+  .btn-refresh {
+    width: 70px;
+    height: 21px;
+    border-radius: 25px;
+    font-size: 10px;
+    padding: 0 10px 0 10px;
+  }
+
+  .headContainer {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  #btn1 {
+    display: none;
+  }
+  #td1 {
+    display: none;
+  }
+}
+@media (max-width: 300px) {
+  #btn3 {
+    display: none;
+  }
+  #td3 {
+    display: none;
+  }
+  table {
+    font-size: 7px;
+    border-spacing: 0px;
+    font-weight: normal;
+  }
 }
